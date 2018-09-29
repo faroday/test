@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Calculator {
     private Scanner in;
     private String expression;
-    private String partInBrackets;
-    private String partBefor;
-    private String partAfter;
 
     public Calculator(){
         in = new Scanner(System.in);
@@ -19,28 +16,37 @@ public class Calculator {
             expression = in.nextLine();
             if (expression.equals("exit")) return;
             expression = expression.replaceAll(" ", "");
-            countSecond(expression);
+            System.out.println(readBreackets(expression));
         }
     }
 
-    private void readBreackets(){
+
+    //найдем выражения в скобках
+    private String readBreackets(String str){
+        String partInBrackets = "";
+        String partBefor = "";
+        String partAfter = "";
+        String str2 = str;
+
         int position = 0; //позиция на которой стоит открывающая скобка
-        for (int i = 0; i < expression.length() - 1; i++) {
-            if (expression.charAt(i) == '(') {
-                position = i;
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == '(') {
+                    position = i;
+                }
+                if (str.charAt(i) == ')') {
+                    partInBrackets = str.substring(position + 1, i);
+                    partBefor = str.substring(0, position);
+                    partAfter = str.substring(i + 1);
+                    str = partBefor + countSecond(countFirst(partInBrackets)) + partAfter;
+                }
             }
-            if (expression.charAt(i) == ')') {
-                partInBrackets = expression.substring(position - 1, i);
-                partBefor = expression.substring(0, position);
-                partAfter = expression.substring(i + 1);
-            }
-        }
-
-        System.out.println(partInBrackets);
-        System.out.println(partAfter);
-        System.out.println(partBefor);
+            if (!str.equals(str2))
+                str = readBreackets(str);
+        return str;
     }
 
+
+    //найдем буквенные функции (sqrt(), sin())
     private void readFunc(){
         String funcName = "";
         String func = "";
@@ -71,7 +77,7 @@ public class Calculator {
     }
 
     //операции которые в выражении выполняются первыми(*,/)
-    private double countFirst(String str){
+    private String countFirst(String str){
         String firstDigit = "";
         String secondDigit = "";
         char operator;
@@ -103,11 +109,12 @@ public class Calculator {
                 secondDigit = "";
             }
         }
-        return Double.parseDouble(str);
+        return str;
     }
 
 
-    private void countSecond(String str){
+    //операции которые в выражении выполняются вторыми(+,-)
+    private String countSecond(String str){
         String firstDigit = "";
         String secondDigit = "";
         char operator = '0';
@@ -136,11 +143,11 @@ public class Calculator {
                 str = str.substring(0, i - firstDigit.length()) +
                         operation(first, second, operator) +
                         str.substring(i + secondDigit.length() + 1);
-                System.out.println(str);
                 firstDigit = "";
                 secondDigit = "";
             }
         }
+        return str;
     }
 
 
