@@ -9,13 +9,14 @@ public class CategoryB {
     public static String expression = "([][{}]) [({})] ({[]}) {[()]}";
 
     //скобочное выражение
-    public static String task1(){
+    public static void task1(){
         expression = expression.replaceAll(" ", "");
+        System.out.println(expression);
         task1loop();
         if (expression.length() == 0)
-            return "SUCCESS";
+            System.out.println("SUCCESS");
         else
-            return "FAIL";
+            System.out.println("FAIL");
     }
 
     //удалим все парные скобки
@@ -23,7 +24,6 @@ public class CategoryB {
         //если длина массива 0 выходим из рекурсии
         if (expression.length() != 0) {
             String st = expression;
-            System.out.println(expression);
             for (int i = 0; i < expression.length() - 1; i++) {
                 //проверяем стоят ли открывающая и закрывающая скобки рядом ()
                 if (expression.charAt(i) == '(' && expression.charAt(i + 1) == ')' ||
