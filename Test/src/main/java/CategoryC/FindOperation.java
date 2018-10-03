@@ -1,9 +1,15 @@
 package CategoryC;
 
-public class Count extends Operation {
+import CategoryC.impl.Operation;
+
+public class FindOperation extends Operation {
 
     @Override
-    String count(String str, char operator) {
+    public String find(String str, char operator) {
+        String firstDigit = ""; //первое число математической операции
+        String secondDigit = "";//второе число математической операции
+        int index = 1; //счетчик для перебора ближайщих цифр стоящих к оператору
+
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == operator && i != 0) { //ищем ближайший математический оператор
                 while (Character.isDigit(str.charAt(i - index)) || //записываем число слева от оператора
@@ -22,10 +28,11 @@ public class Count extends Operation {
                     if (index >= str.length() - i) //прерываем цикл, если индекс больше длины массива
                         break;
                 }
-                first = Double.parseDouble(firstDigit);
-                second = Double.parseDouble(secondDigit);
+                double first = Double.parseDouble(firstDigit);
+                //для перевода числа из строки в double
+                double second = Double.parseDouble(secondDigit);
                 str = str.substring(0, i - firstDigit.length()) + //склеиваем строку с посчитанным значением
-                        operation(first, second, operator) +
+                        count(first, second, operator) +
                         str.substring(i + secondDigit.length() + 1);
                 index = 1;
                 firstDigit = "";
