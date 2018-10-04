@@ -11,7 +11,8 @@ public class InputValidation implements Validation {
             if (!Character.isLetterOrDigit(str.charAt(i)) &&
                     str.charAt(i) != '*' && str.charAt(i) != '/' &&
                     str.charAt(i) != '+' && str.charAt(i) != '-' &&
-                    str.charAt(i) != '(' && str.charAt(i) != ')')
+                    str.charAt(i) != '(' && str.charAt(i) != ')' &&
+                    str.charAt(i) != '.' && str.charAt(i) != ',')
                 return false;
 
             //проверим на ввод нескольких операторов подряд

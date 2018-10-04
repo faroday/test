@@ -25,12 +25,20 @@ public class ReadInput implements Read {
 
         if (lines[0].equals("help")){//экран помощи
             System.out.println("Here's what I can..");
-            System.out.println("Root: >>sqrt(4)\n" +
+            System.out.println("You may type expression like this: 9 + pow(3,2)*4-5/7\n" +
+                    "Root: >>sqrt(4)\n" +
                     "Power: >>pow(4, 2), 4 - number, 2 - power\n" +
                     "Sinus: >>sin(0.5)\n" +
                     "Save: >>save fileName, \"fileName\" is name of your file\n" +
                     "Load: >>load fileName\n" +
                     "Exit: >>exit");
+            return true;
+        }
+
+        if (lines[0].equalsIgnoreCase("harry") &&
+                lines[1].equalsIgnoreCase("potter")){
+            String userName = writer.load("userName");
+            System.out.println("Yer a programmer, " + userName + "!");
             return true;
         }
 

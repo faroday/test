@@ -31,8 +31,8 @@ public class CountFactory {
     public String count(String str){
         str = operation.find(str, '*');
         str = operation.find(str, '/');
-        str = operation.find(str, '+');
         str = operation.find(str, '-');
+        str = operation.find(str, '+');
         return str;
     }
 }

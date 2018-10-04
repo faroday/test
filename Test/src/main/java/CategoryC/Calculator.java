@@ -11,13 +11,13 @@ import java.util.Scanner;
 
 public class Calculator {
     private Scanner in;
-    private CountFactory factory;
+    private CountFactory factory;//объединяет все расчеты в один метод
 
-    private StringBuilder lines;
-    private File writer;
-    private Read input;
+    private StringBuilder lines;//вводимые пользователем выражения будем хранить здесь
+    private File writer;//загрузка, сохранение
+    private Read input;//чтение команд пользователя
 
-    private Validation test;
+    private Validation test;//проверка ввода
 
      private  String userName;
 
@@ -39,11 +39,11 @@ public class Calculator {
         while (true) {
             System.out.print(">>");
 
-            String expression = in.nextLine();
+            String expression = in.nextLine();//читаем ввод пользователя
 
             if (expression.equals("exit")) return;//если ввод exit выходим из программы
 
-            //проверяем не хочет ли пользователь загрузить или сохранить данные
+            //проверяем не хочет ли пользователь загрузить или сохранить данные или что то третье..
             if (!input.read(expression, lines)) {//если на входе save или load возвращает true и блок if не выполняется
 
                 if (test.validation(expression)) {//проверим правильность ввода
@@ -74,10 +74,11 @@ public class Calculator {
             stopIt();
             System.out.println("Nice to meet you, " + userName + "!");
             stopIt();
-            System.out.println("You may type \"help\" to help!");
+            System.out.println("You may type \"help\" for help!");
         } else {
             System.out.println("Welcome back, " + userName + "!");
-            System.out.println("Just remember, " + userName + ", you may type \"help\" to help!");
+            stopIt();
+            System.out.println("Just remember, " + userName + ", you may type \"help\" for help!");
         }
     }
 

@@ -11,7 +11,7 @@ public class FindFunction extends Function {
     @Override
     public String find(String str, Breackets breackets, CountFactory factory) {
 
-        String funcName = ""; //записываем название функции
+        String funcName = ""; // название функции
         int position = 0;//позиция открывающей скобки
         int breacketsCounter = 0; //считаем сколько открывающих скобок внутри функции
 
@@ -38,6 +38,7 @@ public class FindFunction extends Function {
 
                         funcName = "";
                         position = 0;
+                        i=0;
                     }
                 }
             }
