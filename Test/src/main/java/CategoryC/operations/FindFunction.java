@@ -1,7 +1,10 @@
-package CategoryC;
+package CategoryC.operations;
 
+import CategoryC.CountFactory;
 import CategoryC.impl.Breackets;
 import CategoryC.impl.Function;
+
+//ищем функцию и считаем ее
 
 public class FindFunction extends Function {
 

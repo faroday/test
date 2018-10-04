@@ -1,5 +1,6 @@
-package CategoryC;
+package CategoryC.operations;
 
+import CategoryC.CountFactory;
 import CategoryC.impl.Breackets;
 
 public class FindBreackets implements Breackets {

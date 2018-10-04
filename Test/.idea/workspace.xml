@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879ea21a-2f07-4de7-91ee-0fe4dccbdcfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryC/files/ReadInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryC/files/Writer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Read.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryC/validation/InputValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/Breackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Breackets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/FindOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/CountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/CountFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/ReadBreackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/FindBreackets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/ReadFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/FindFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/Breackets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/FindBreackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/operations/FindBreackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/FindFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/operations/FindFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/FindOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/operations/FindOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CategoryC/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/Count.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/CountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CategoryC/CountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/Function.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/Operation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/ReadBreackets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/ReadFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/FindBreackets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/FindFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/FindOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CategoryC/impl/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CategoryC/impl/Function.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,33 +34,36 @@
     <session id="1268325799">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.10" value="4" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="41" />
+          <entry key="java" value="81" />
+          <entry key="prt" value="4" />
+          <entry key="userName" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="81" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="10892" />
+          <entry key="java" value="13953" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10892" />
+          <entry key="JAVA" value="13953" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -77,46 +82,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/FindFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/CountFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="261">
+              <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/files/ReadInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,16 +130,29 @@
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/RFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/Function.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/Count.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CategoryC/FindOperation.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Operation.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/ReadBreackets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Breackets.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/FindBreackets.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/ReadFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CategoryC/CountFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Breackets.java" />
         <option value="$PROJECT_DIR$/src/main/java/CategoryC/FindFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/FindOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/SaveLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Save.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Load.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/Writer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Validation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/InputValidation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/validationj.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/validation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/CountFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/File.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/impl/Read.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/files/Writer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/files/ReadInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java" />
+        <option value="$PROJECT_DIR$/userName" />
       </list>
     </option>
   </component>
@@ -170,8 +167,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,7 +218,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538571046230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538680251893" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -272,7 +272,7 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15757576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -375,17 +375,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/FindOperation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Breackets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Breackets.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Save.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="66">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -396,49 +396,202 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/FindBreackets.java">
+    <entry file="file://$PROJECT_DIR$/prt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="110">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/validation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/validation/InputValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/operations/FindBreackets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/operations/FindOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/CountFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="77">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/operations/FindFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="22">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Read.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/files/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/impl/Function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/FindFunction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/files/ReadInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        <state relative-caret-position="429">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/userName">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CategoryC/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

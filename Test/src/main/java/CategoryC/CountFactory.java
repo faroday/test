@@ -3,6 +3,11 @@ package CategoryC;
 import CategoryC.impl.Breackets;
 import CategoryC.impl.Function;
 import CategoryC.impl.Operation;
+import CategoryC.operations.FindBreackets;
+import CategoryC.operations.FindFunction;
+import CategoryC.operations.FindOperation;
+
+//соберем все методы в вызов одного
 
 public class CountFactory {
     private Operation operation;
@@ -15,6 +20,7 @@ public class CountFactory {
         function = new FindFunction();
     }
 
+    //выполним все подсчеты
     public String doAll(String str, CountFactory factory){
         str = function.find(str, breackets, factory);
         str = breackets.find(str, factory); //подсчитаем выражения в скобках

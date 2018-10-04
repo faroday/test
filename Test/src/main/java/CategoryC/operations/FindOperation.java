@@ -1,6 +1,8 @@
-package CategoryC;
+package CategoryC.operations;
 
 import CategoryC.impl.Operation;
+
+//ищем и считаем математические операции
 
 public class FindOperation extends Operation {
 
