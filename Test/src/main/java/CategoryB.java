@@ -41,10 +41,11 @@ public class CategoryB {
     //вывод массива по спирали
     public static void task2(){
         int n = 5; //размерность массива
-        int p = n / 2;//количество вложенных "матрешек" в матрице 789
+        int p = n / 2;//количество вложенных матриц в матрице     789
         int j, l = 0;                                           //4 6 => 5
         int [] numbers = new int[n * n];                        //123
         int[][] arr = new int[n][n];
+
         //инициализируем массив случайными числами
         for (int i = 0; i<n * n; i++){
             numbers[i]= random.nextInt(9) + 1;
@@ -55,19 +56,28 @@ public class CategoryB {
         System.out.println(Arrays.toString(numbers));
 
         //заполним по спирали
-        for(int k=1;k<=p;k++){
-            for (j=k-1;j<n-k+1;j++) arr[k-1][j] = numbers[l++];
-            for (j=k;j<n-k+1;j++) arr[j][n-k] = numbers[l++];
-            for (j=n-k-1;j>=k-1;--j) arr[n-k][j] = numbers[l++];
-            for (j=n-k-1;j>=k;j--) arr[j][k-1] = numbers[l++];
+        for(int k = 1;k <= p;k++){
+            for (j = k-1;j < n-k+1;j++) arr[k-1][j] = numbers[l++];
+            for (j = k;j < n-k+1;j++) arr[j][n-k] = numbers[l++];
+            for (j = n-k-1;j >= k-1;--j) arr[n-k][j] = numbers[l++];
+            for (j = n-k-1;j >= k;j--) arr[j][k-1] = numbers[l++];
         }
-        if (n % 2 ==1) //если в центральной "матрешке!" массив из 1 числа
+        if (n % 2 ==1) //если в центральной матрице массив из 1 числа
             arr[p][p] = numbers[l];
         for (int i = 0; i<n; i++){
             for (int m = 0; m<n; m++) {
                 System.out.print(arr[i][m] + " ");
             }
             System.out.print("\n");
+        }
+
+        l = 0;
+        //заполним змейкой
+        for (int i = 0; i < n; i++){
+            for (int k = 0; k < n; k++){
+                arr[i][k] = numbers[l++];
+                //if (i % 2 == 1)
+            }
         }
     }
 
