@@ -6,8 +6,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+
+//работаем с файлами
 public class Writer implements File {
 
+    //загружаем из файла
     @Override
     public String load(String fileName) {
         try {
@@ -23,6 +26,7 @@ public class Writer implements File {
         }
     }
 
+    //сохраняем в файл
     @Override
     public void save(String fileName, String lines, boolean append) {
         try {

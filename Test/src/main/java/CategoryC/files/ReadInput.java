@@ -1,13 +1,14 @@
 package CategoryC.files;
 
+import CategoryC.CountFactory;
 import CategoryC.impl.File;
 import CategoryC.impl.Read;
 
 
 public class ReadInput implements Read {
-    //читаем ввод пользователя и делаем загрузку или сохранение данных
+    //читаем ввод пользователя и делаем загрузку или сохранение данных, а так же и другие команды
     @Override
-    public boolean read(String str, StringBuilder builder){
+    public boolean read(String str, StringBuilder builder, CountFactory factory){
         File writer = new Writer();
 
         String[] lines = str.split(" ");//разделим строку на слова
@@ -25,13 +26,24 @@ public class ReadInput implements Read {
 
         if (lines[0].equals("help")){//экран помощи
             System.out.println("Here's what I can..");
-            System.out.println("You may type expression like this: 9 + pow(3,2)*4-5/7\n" +
-                    "Root: >>sqrt(4)\n" +
-                    "Power: >>pow(4, 2), 4 - number, 2 - power\n" +
-                    "Sinus: >>sin(0.5)\n" +
+            System.out.println("By default: basic mode\n" +
+                    "Switch to boolean mode: >>bool\n" +
+                    "Switch to basic mode: >>basic\n" +
                     "Save: >>save fileName, \"fileName\" is name of your file\n" +
                     "Load: >>load fileName\n" +
-                    "Exit: >>exit");
+                    "Exit: >>exit\n\n" +
+                    "In basic mode:\n" +
+                    "You may type expression like this: 9 + pow(3,2)*4-5/7\n" +
+                    "Root: >>sqrt(4)\n" +
+                    "Power: >>pow(4, 2), 4 - number, 2 - power\n" +
+                    "Sinus: >>sin(0.5)\n\n" +
+                    "In boolean mode:\n" +
+                    "You may type expression like this: !1 & ( 0 | 1 )\n" +
+                    "true: >>1\n" +
+                    "false: >>0\n" +
+                    "AND: >>&\n" +
+                    "OR: >>|\n" +
+                    "NOT: >>!");
             return true;
         }
 
@@ -39,6 +51,16 @@ public class ReadInput implements Read {
                 lines[1].equalsIgnoreCase("potter")){
             String userName = writer.load("userName");
             System.out.println("Yer a programmer, " + userName + "!");
+            return true;
+        }
+
+        if (lines[0].equalsIgnoreCase("bool")){
+            factory.booleanMode();
+            return true;
+        }
+
+        if (lines[0].equalsIgnoreCase("basic")){
+            factory.basicMode();
             return true;
         }
 

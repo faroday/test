@@ -1,5 +1,8 @@
 package CategoryC.impl;
 
+import CategoryC.CountFactory;
+
 public interface Read {
-    boolean read(String str, StringBuilder builder);
+    //функция для чтения ввода
+    boolean read(String str, StringBuilder builder, CountFactory factory);
 }

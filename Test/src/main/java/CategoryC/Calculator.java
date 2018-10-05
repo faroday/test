@@ -4,8 +4,6 @@ import CategoryC.files.ReadInput;
 import CategoryC.files.Writer;
 import CategoryC.impl.File;
 import CategoryC.impl.Read;
-import CategoryC.impl.Validation;
-import CategoryC.validation.InputValidation;
 
 import java.util.Scanner;
 
@@ -17,8 +15,6 @@ public class Calculator {
     private File writer;//загрузка, сохранение
     private Read input;//чтение команд пользователя
 
-    private Validation test;//проверка ввода
-
      private  String userName;
 
     public Calculator(){
@@ -28,8 +24,6 @@ public class Calculator {
         lines = new StringBuilder();
         writer = new Writer();
         input = new ReadInput();
-
-        test = new InputValidation();
 
         userName = writer.load("userName");
     }
@@ -44,9 +38,9 @@ public class Calculator {
             if (expression.equals("exit")) return;//если ввод exit выходим из программы
 
             //проверяем не хочет ли пользователь загрузить или сохранить данные или что то третье..
-            if (!input.read(expression, lines)) {//если на входе save или load возвращает true и блок if не выполняется
+            if (!input.read(expression, lines, factory)) {//если на входе save или load возвращает true и блок if не выполняется
 
-                if (test.validation(expression)) {//проверим правильность ввода
+                if (factory.valid(expression)) {//проверим правильность ввода
 
                     expression = expression.replaceAll(" ", "");//уберем все пробелы
                     lines.append(expression);//добавим в строку выражение
@@ -84,7 +78,7 @@ public class Calculator {
 
     private void stopIt(){
         try {
-            Thread.sleep(700);
+            Thread.sleep(500);
         } catch (InterruptedException e){
             System.out.println(e);
         }

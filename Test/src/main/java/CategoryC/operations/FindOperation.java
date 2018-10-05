@@ -4,7 +4,7 @@ import CategoryC.impl.Operation;
 
 //ищем и считаем математические операции
 
-public class FindOperation extends Operation {
+public class FindOperation implements Operation {
 
     @Override
     public String find(String str, char operator) {
@@ -41,6 +41,25 @@ public class FindOperation extends Operation {
                 secondDigit = "";
             }
         }
+        return str;
+    }
+
+    @Override
+    public double count(double first, double second, char operator){
+        switch (operator){
+            case '+' : return first + second;
+            case '-' : return first - second;
+            case '*' : return first * second;
+            case '/' : return first / second;
+            default: return 0;
+        }
+    }
+
+    public String doOperate(String str){
+        str = find(str, '*');
+        str = find(str, '/');
+        str = find(str, '-');
+        str = find(str, '+');
         return str;
     }
 }

@@ -6,7 +6,21 @@ import CategoryC.impl.Function;
 
 //ищем функцию и считаем ее
 
-public class FindFunction extends Function {
+public class FindFunction implements Function {
+
+    @Override
+    public double function(String num, String func){
+        if (func.equals("sqrt"))
+            return Math.sqrt(Double.parseDouble(num));
+        if (func.equals("sin"))
+            return Math.sin(Double.parseDouble(num));
+        if (func.equals("pow")) {
+            String[] numbers = num.split(",");
+            return Math.pow(Double.parseDouble(numbers[0]), Double.parseDouble(numbers[1]));
+        }
+        System.out.println(func + " is unknown function!");
+        return 0;
+    }
 
     @Override
     public String find(String str, Breackets breackets, CountFactory factory) {
